@@ -1,0 +1,193 @@
+
+#submit {
+    background-color: #d59321;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 10px 35px;
+    margin-top: 25px;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+#submit:hover {
+    background-color: #f5b341;
+}
+
+#submit:active {
+    background-color: #c58311;
+}
+#contactbg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 780px;
+    background: radial-gradient(ellipse at top left, #773aa6, transparent), radial-gradient(ellipse at 15% 100%, #301843, transparent), radial-gradient(ellipse at bottom right, #3a44a6, transparent);
+}
+#contactbg div {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/bg.png");
+    background-size: cover;
+}
+#contact.infopage {
+    min-height: 620px;
+}
+#form, #contactinfo {
+    position: relative;
+    padding: 30px 50px;
+    display: block;
+    width: 47%;    
+    backdrop-filter: blur(10px) brightness(70%);
+    z-index: 2;
+    transition-duration: 0.5s;
+    transition-property: backdrop-filter;
+}
+#form:hover, #contactinfo:hover {
+    backdrop-filter: blur(5px) brightness(90%);
+}
+#form h1, #contactinfo h1 {
+    color: #f0f0f0;
+    font-size: 48px;
+    line-height: 54px;
+}
+#form h2, #contactinfo h2 {
+    color: #e8e8e8;
+    font-size: 20px;
+    line-height: 26px;
+}
+#contact {
+    display: flex;
+}
+#contactinfo {
+    margin-left: 6%;
+}
+
+
+
+.contactcard {
+    background-color: #ffffff;
+    margin: 6px 0px;
+    padding: 20px 35px;
+    display: block;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+.contactcard span {
+    color: #662714;
+    display: block;
+    transition-duration: 0.5s;
+    transition-property: color;
+}
+.contactcard span:nth-child(1) {
+    font-size: 18px;
+    line-height: 24px;
+}
+.contactcard span:nth-child(2) {
+    font-size: 32px;
+    line-height: 38px;
+}
+.contactcard:hover {
+    background-color: #f5b341;
+}
+.contactcard:hover span {
+    color: #ffffff;
+}
+
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 5px 0px;
+}
+.input label {
+    font-size: 18px;
+    line-height: 24px;
+    display: block;
+    padding-bottom: 3px;
+    color: #f0f0f0;
+}
+.input input {
+    font-size: 18px;
+    font-family: Quattrocento, serif;
+    line-height: 24px;
+    display: block;
+    width: 100%;
+    padding: 3px 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    color: #121212;
+}
+.input input::placeholder, .input textarea::placeholder {
+    color: #bbbbbb;
+}
+.input textarea {
+    font-size: 18px;
+    font-family: Quattrocento, serif;
+    line-height: 24px;
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    color: #121212;
+    padding: 3px 10px;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+    #contactbg div {
+        background-image: url("/images/bg-vert.png");
+    }
+    #contact {
+        flex-wrap: wrap;
+        width: 850px;
+        margin: 0 auto;
+    }
+    #contactinfo {
+        margin-left: 0%;
+        margin-top: 20px;
+    }
+    #contactbg {
+        height: 1190px;
+    }
+    #form, #contactinfo {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    #contact {
+        width: 100%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 650px) {
+    #form, #contactinfo {
+        padding: 20px 35px;
+    }
+    #form h1, #contactinfo h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    #form h2, #contactinfo h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .contactcard {
+        padding: 10px 20px;
+    }
+    .contactcard span:nth-child(1) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .contactcard span:nth-child(2) {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}

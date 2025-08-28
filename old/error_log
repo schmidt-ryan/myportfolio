@@ -1,0 +1,20 @@
+[15-Oct-2024 01:09:57 UTC] PHP Warning:  require_once(pages/home.php): Failed to open stream: No such file or directory in /home/ryanzpnl/public_html/index.php on line 34
+[15-Oct-2024 01:09:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'pages/home.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ryanzpnl/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ryanzpnl/public_html/index.php on line 34
+[15-Oct-2024 01:09:58 UTC] PHP Warning:  require_once(pages/home.php): Failed to open stream: No such file or directory in /home/ryanzpnl/public_html/index.php on line 34
+[15-Oct-2024 01:09:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'pages/home.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ryanzpnl/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ryanzpnl/public_html/index.php on line 34
+[15-Oct-2024 01:11:14 UTC] PHP Warning:  require_once(pages/home.php): Failed to open stream: No such file or directory in /home/ryanzpnl/public_html/index.php on line 34
+[15-Oct-2024 01:11:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'pages/home.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ryanzpnl/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ryanzpnl/public_html/index.php on line 34
+[15-Oct-2024 01:11:17 UTC] PHP Warning:  require_once(pages/home.php): Failed to open stream: No such file or directory in /home/ryanzpnl/public_html/index.php on line 34
+[15-Oct-2024 01:11:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'pages/home.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ryanzpnl/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ryanzpnl/public_html/index.php on line 34

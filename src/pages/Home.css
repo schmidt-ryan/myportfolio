@@ -1,0 +1,148 @@
+
+#home {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 700px;
+}
+#bg {
+    width: auto; 
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.7;
+}
+#box  { 
+    display: block;
+    width: 100%;
+    height: 700px;
+}
+#design, #code {
+    position: absolute;
+    top: 100px;
+    left: -120px;
+    width: 500px;
+    height: 500px;
+    animation-name: designcode;
+    animation-duration: 1.5s;
+}
+#design {
+    animation-name: design;
+}
+#code {
+    animation-name: code;
+}
+#love {
+    position: absolute;
+    bottom: 10px; 
+    left: 15px;
+    width: 230px;
+    font-size: 18px;
+    color: rgba(255,255,255,0.5);
+    font-family: Quattrocento, serif;
+    text-align: center;
+    line-height: 120%;
+}
+
+
+#circle {
+    position: absolute;
+    display: block;
+    top: 200px; 
+    left: -20px;
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    animation-name: circle;
+    animation-duration: 0.5s;
+}
+
+#circle img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    width: 100%; 
+    height: auto;
+}
+
+#circle canvas {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 100%, #662714, #000000);
+}
+
+.box {
+    display: block;
+    width: 100%;
+    height: 50%;
+    padding-left: 150px;
+}
+
+.design {
+    background: radial-gradient(ellipse at top left, #773aa6, transparent), radial-gradient(ellipse at 15% 100%, #301843, transparent), radial-gradient(ellipse at bottom right, #3a44a6, transparent);
+}
+
+.development {
+    background: radial-gradient(ellipse at top left, #2e5d9d, transparent), radial-gradient(ellipse at 25% 90%, #48b590, transparent);
+}
+
+
+
+
+@keyframes design {
+    0% {
+        top: 350px;
+        left: 50px;
+        width: 0px;
+        height: 0px;
+        transform: rotate(-45deg);
+    }
+    100% {
+        top: 100px;
+        left: -120px;
+        width: 500px;
+        height: 500px;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes code {
+    0% {
+        top: 350px;
+        left: 50px;
+        width: 0px;
+        height: 0px;
+        transform: rotate(45deg);
+    }
+
+    100% {
+        top: 100px;
+        left: -120px;
+        width: 500px;
+        height: 500px;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes circle {
+    0% {
+        top: 350px;
+        left: 40px;
+        width: 0px;
+        height: 0px;
+    }
+
+    100% {
+        top: 200px;
+        left: -20px;
+        width: 300px;
+        height: 300px;
+    }
+}

@@ -1,0 +1,95 @@
+
+.left {
+    float: left;
+    margin-right: 40px;
+}
+.right {
+    float: right;
+    margin-left: 40px;
+}
+.screenshot {
+    display: block;
+    position: relative;
+    width: 500px;
+    height: 340px;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.shotoverlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0);
+    opacity: 1;
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.4);
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+.shotoverlay span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ffffff;
+    font-size: 22px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+.screenshot img, .screenshot video {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    width: 100%;
+    transform: translateX(-50%);
+    height: auto;
+    transition-property: width;
+    transition-duration: 0.5s;
+}
+.screenshot:hover img {
+    width: 114%;
+}
+.screenshot:hover .shotoverlay {
+    background-color: rgba(0,0,0,0.5);
+}
+.screenshot:hover .shotoverlay span {
+    opacity: 1;
+}
+.screenshot.sm {
+    height: 270px;
+}
+.screenshot.med {
+    height: 300px;
+}
+.screenshot.lrg {
+    height: 360px;
+}
+
+
+@media only screen and (min-width: 1300px) {
+    .screenshot {
+        width: 680px;
+        height: 450px;
+    }
+    .screenshot.sm {
+        height: 380px;
+    }
+    .screenshot.med {
+        height: 420px;
+    }
+    .screenshot.lrg {
+        height: 500px;
+    }
+    .left {
+        margin-right: 60px;
+    }
+
+    .right {
+        margin-left: 60px;
+    }
+}
