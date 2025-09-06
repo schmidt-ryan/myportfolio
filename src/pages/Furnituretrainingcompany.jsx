@@ -9,7 +9,7 @@ function Furnituretrainingcompany() {
         <>  
             <div className="infopage">
                 <h1>Furniture Training Company</h1>
-                <h2>Training for retail sales professionals</h2>
+                <h2>Sales training for retail furniture sales professionals</h2>
 
                 <hr />
                 <Screenshot format="video" src="/images/ftc/sizzle.mp4" float="right" />
@@ -43,6 +43,15 @@ function Furnituretrainingcompany() {
                     <h3>Custom Styling</h3>
                     <p>Many companies want a custom whitelisting of the training. In order to allow for companies to customize their own branding, a tool was created to allow buyers to customize the overall color scheme and add logos. Any changes to the theme were shown in real time so that buyers could make quick, confident decisions easily.</p>
                     <p className="code">In order to keep the visualizing code DRY, the user's session was used to store any changes to the theme and shown via existing pages. This functionality mirrored what would happen when the new theme was saved, so what you see is what you get - without creating special example pages for the visualizer.</p>
+                </div>
+
+                <hr />
+                <Screenshot format="video" src="/images/ftc/jackpot.mp4" float="right" />
+                <div className="side">
+                    <h3>Learning Can Be Fun</h3>
+                    <p>The Furniture Training Company has a suite of three games that users with an active account can play, regardless of whether or not they are paying for training.</p>
+                    <p>We found these to be very popular, and we even had managers complaining off-hand that their salespeople were playing the games when they should be paying attention to the floor.</p>
+                    <p>Pulling the slot machine arm to start the game was an extra, unnecessary step, but I thought it helped to sell the illusion that you are playing the actual game.</p>
                 </div>
                 <div className="clear"></div>
             </div>

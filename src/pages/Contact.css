@@ -122,6 +122,13 @@
     border: 1px solid #dddddd;
     border-radius: 5px;
     color: #121212;
+	margin: 2px 0px 2px 0px;
+	transition-duration: 0.2s;
+	transition-property: padding margin;
+}
+.input input:hover {
+	margin: 0px 0px 0px 0px;
+	padding: 5px 10px;
 }
 .input input::placeholder, .input textarea::placeholder {
     color: #bbbbbb;
@@ -137,6 +144,36 @@
     border: 1px solid #dddddd;
     color: #121212;
     padding: 3px 10px;
+	margin: 2px 0px 2px 0px;
+}
+.err {
+    float: right;
+    color: #ff6666;
+}
+input.inputerror {
+    background-color: #ffbbbb;
+    color: #770000;
+    border: 1px solid #ff8888;
+    animation-duration: 0.5s;
+    animation-name: showred;
+}
+input.inputerror::placeholder {
+    color: #ff7777;
+}
+
+
+
+@keyframes showred {
+    0% {
+        background-color: #ffffff;
+        color: #121212;
+        border: 1px solid #dddddd;
+    }
+    100% {
+        background-color: #ffbbbb;
+        color: #770000;
+        border: 1px solid #ff8888;
+    }
 }
 
 
@@ -147,7 +184,6 @@
     }
     #contact {
         flex-wrap: wrap;
-        width: 850px;
         margin: 0 auto;
     }
     #contactinfo {
@@ -158,7 +194,8 @@
         height: 1190px;
     }
     #form, #contactinfo {
-        width: 100%;
+        width: 800px;
+        margin: 10px auto;
     }
 }
 @media only screen and (max-width: 850px) {
@@ -169,7 +206,7 @@
 }
 @media only screen and (max-width: 650px) {
     #form, #contactinfo {
-        padding: 20px 35px;
+        padding: 15px 25px;
     }
     #form h1, #contactinfo h1 {
         font-size: 40px;
@@ -180,7 +217,7 @@
         line-height: 24px;
     }
     .contactcard {
-        padding: 10px 20px;
+        padding: 8px 15px;
     }
     .contactcard span:nth-child(1) {
         font-size: 16px;

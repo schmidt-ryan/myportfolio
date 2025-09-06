@@ -56,7 +56,7 @@ const cards = [
         'title': 'O. W. Lee Brand Training',
         'client': 'O. W. Lee',
         'url': 'https://owlee.brandtrainingprogram.com',
-        'imagesrc': '/images/owlee/thumb.jpg',
+        'imagesrc': '/images/owlee/dashboard.png',
         'design': 'Brand-specific sales training for the O.W. Lee company, who creates heirloom quality outdoor furniture',
         'code': 'SVN, HTML5, Javascript, PHP, MariaDB',
         'goto': '/owlee'

@@ -11,7 +11,6 @@ function Home() {
     const num = 300;
 
     useEffect(() => {
-        window.console.log('render Home');
         for (let i = 0; i < num; i++) {
             let x = Math.round(Math.random() * 300);
             let y = Math.round(Math.random() * 300);
@@ -54,7 +53,7 @@ function Home() {
         <>
             <div id="box"></div>
             <div id="home">
-                <img id="bg" src="images/bg.png" alt="" />
+                <div id="bg"></div>
 
                 <img id="design" src="images/design.svg" />
                 <img id="code" src="images/code.svg" />
@@ -66,7 +65,7 @@ function Home() {
                     <canvas id="canvas" width="300" height="300" ref={canvas}></canvas>
                     <img src="images/rs_logo.svg" alt="RS logo" />
                 </div>
-                <p id="love">This site was cooked up<br/>with love and React.js</p>
+                <p id="love">This site was <a href="https://github.com/schmidt-ryan/myportfolio">cooked up</a><br/>with love and React.js</p>
                 <Portfolio />
                 <Nav current="Home" />
             </div>

@@ -9,7 +9,7 @@ function Agclassroom() {
         <>  
             <div className="infopage">
                 <h1>National Agriculture in the Classroom</h1>
-                <h2>UI/UX | front end development | backend development</h2>
+                <h2>USDA / NAITCO</h2>
 
                 <hr />
                 <Screenshot format="img" src="/images/agclassroom/thumb.jpg" float="left" height="sm" />

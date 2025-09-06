@@ -220,3 +220,82 @@
         background-color: none;
     }
 }
+
+
+
+@media only screen and (max-width: 1100px) {
+    #slider, #portfolio {
+        height: 490px;
+    }
+    #portfolio {
+        width: calc(100% - 260px);
+        left: 240px;
+    }
+    .card {
+        width: 300px;
+        height: 470px;
+    }
+    .cardimage {
+        width: 296px;
+        height: 188px;
+    }
+    .card h3 {
+        font-size: 27px;
+        line-height: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0px 15px 0px 15px;
+    }
+    .card p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .box {
+        padding-left: 100px;
+    }
+    .card a.more {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 8px 20px;
+        bottom: 20px;
+    }
+
+    .s0 { left: 0px; }
+    .s1 { left: -320px; }
+    .s2 { left: -640px; }
+    .s3 { left: -960px; }
+    .s4 { left: -1280px; }
+    .s5 { left: -1600px; }
+    .s6 { left: -1920px; }
+    .s7 { left: -2240px; }
+    .s8 { left: -2560px; }
+
+    @keyframes loaded {
+        0% {
+            opacity: 0;
+            left: 260px;
+        }
+
+        100% {
+            opacity: 1;
+            left: 240px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #portfolio {
+        animation-name: none;
+    }
+    #showportfolio {
+        animation-name: fadein;
+        animation-duration: 1s;
+    }
+
+    @keyframes fadein {
+        #showportfolio {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    }
+}

@@ -7,12 +7,14 @@
     height: 700px;
 }
 #bg {
-    width: auto; 
+    width: 100%; 
     height: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
-    opacity: 0.7;
+    background-image: url("/images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #box  { 
     display: block;
@@ -44,6 +46,12 @@
     font-family: Quattrocento, serif;
     text-align: center;
     line-height: 120%;
+}
+#love a {
+    color: #ffffff;
+}
+#love a:hover {
+    text-decoration: underline;
 }
 
 
@@ -144,5 +152,147 @@
         left: -20px;
         width: 300px;
         height: 300px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    #home {
+        height: 550px;
+    }
+    #box {
+        height: 550px;
+    }
+    #love {
+        left: 10px;
+        width: 200px;
+        font-size: 16px;
+    }
+    #design, #code {
+        top: 85px;
+        left: -95px;
+        width: 375px;
+        height: 375px;
+    }
+    #circle {
+        top: 160px;
+        left: -20px;
+        width: 225px;
+        height: 225px;
+    }
+    .box {
+        padding-left: 110px;
+    }
+	
+    @keyframes design {
+        0% {
+            top: 260px;
+            left: 35px;
+            width: 0px;
+            height: 0px;
+        }
+
+        100% {
+            top: 85px;
+            left: -95px;
+            width: 375px;
+            height: 375px;
+        }
+    }
+
+    @keyframes code {
+        0% {
+            top: 260px;
+            left: 35px;
+            width: 0px;
+            height: 0px;
+        }
+
+        100% {
+            top: 85px;
+            left: -95px;
+            width: 375px;
+            height: 375px;
+        }
+    }
+
+    @keyframes circle {
+        0% {
+            top: 220px;
+            left: 40px;
+            width: 0px;
+            height: 0px;
+        }
+
+        100% {
+            top: 160px;
+            left: -20px;
+            width: 225px;
+            height: 225px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+	#bg {
+        background-image: url("/images/bg-vert.png");
+	}
+    #design, #code {
+        z-index: 1;
+        animation-name: verticalslide;
+        animation-duration: 1.5s;
+    }
+    #code {
+        transform: rotate(270deg);
+        left: 50%;
+        margin-left: -180px;
+        top: -25px;
+    }
+    #design {
+        transform: rotate(270deg);
+        left: 50%;
+        margin-left: -195px;
+        top: -25px;
+    }
+    #circle {
+        top: 50px;
+        left: 50%;
+        margin-left: -112px;
+        animation-name: none;
+    }
+    #portfolio {
+        top: 290px;
+        left: calc(50% - 160px);
+        width: 320px;
+    }
+    #shadowleft, #shadowright { 
+        display: none; 
+    }
+    #home {
+        height: 850px;
+    }
+    #love {
+        left: 50%;
+        margin-left: -100px;
+    }
+
+    .box {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+    }
+    .box.design {
+        left: 0%;
+    }
+    .box.development {
+        left: 50%;
+    }
+
+    @keyframes verticalslide {
+        0% { transform: rotate(300deg); }
+        100% { transform: rotate(270deg); }
     }
 }

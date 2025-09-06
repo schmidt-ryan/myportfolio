@@ -93,3 +93,44 @@
         margin-left: 60px;
     }
 }
+
+@media only screen and (max-width: 900px) {
+    .screenshot {
+        width: 680px;
+        height: 450px;
+		display: block;
+		float: none;
+		margin: 10px auto 20px auto;
+    }
+    .screenshot.sm {
+        height: 380px;
+    }
+    .screenshot.med {
+        height: 420px;
+    }
+    .screenshot.lrg {
+        height: 500px;
+    }
+    .left, .right {
+        margin: 10px auto 20px auto;
+    }
+	.side h3 {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.screenshot {
+		width: 375px;
+		height: 250px;
+	}
+	.screenshot.sm {
+        height: 208px;
+    }
+    .screenshot.med {
+        height: 235px;
+    }
+    .screenshot.lrg {
+        height: 280px;
+    }
+}

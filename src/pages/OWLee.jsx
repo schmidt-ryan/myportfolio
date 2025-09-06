@@ -10,13 +10,13 @@ function OWLee() {
         <>  
             <div className="infopage">
                 <h1>O.W. Lee Training</h1>
-                <h2>O.W. Lee Company | salesperson training for heirloom quality furniture</h2>
+                <h2>O.W. Lee Company | Salesperson training for heirloom quality furniture</h2>
 
                 <hr />
                 <Screenshot format="img" src="/images/owlee/dashboard.png" float="left" height="med" />
                 <h3>Get To The Point</h3>
                 <p>O.W. Lee came to us to create some custom training for their dealers to unify the message sent to their salespeople throughout the country.</p>
-                <p>This program does not do anything else but deliver training, so I went with a card approach in order to get users right into taking training. The unique images in each card help differentiate each lesson and add a certain amount of panache, since the imagery is very nice. Based on the user's progress - not started, started, taken the quiz, done the worksheet - the UI changes to move the user onto the next step and show progress at a glance.</p>
+                <p>This program does not do anything else but deliver training, so I went with a card approach on the dashboard in order to get users right into taking training. The unique images in each card help differentiate each lesson and add a certain amount of panache, since the imagery is very nice. Based on the user's progress - not started, started, taken the quiz, done the worksheet - the UI changes to move the user onto the next step and show progress at a glance.</p>
 
                 <hr />
                 <Screenshot format="img" src="/images/owlee/simplicity2.png" float="right" height="sm" />
@@ -32,7 +32,7 @@ function OWLee() {
                 <hr />
                 <Screenshot format="img" src="/images/owlee/firetable.png" float="right" height="sm" />
                 <h3>High Resolution Imagery</h3>
-                <p>We were given full sized images from O.W. Lee right off of the camera, which allowed us to add a "2x" version of every image.</p>
+                <p>We were given full sized images from O.W. Lee right off of the camera, which allowed us to add a "2x" version of every image for higher resolution screens.</p>
                 <p>(It's wonderful working with people who know what they are doing...)</p>
                 <p className="code">I used the javascript property "devicePixelRatio" to see how the physical pixels map onto CSS. Most screens return a 1:1 (1). Higher density screens such as iPads or phones will return a higher number. I wrote in a check into the javascript library that loads each page to use either the regular images or a "2x" version. While it is more authoring work and requires more storage, the results speak for themselves. The program looks great on high-resolution screens. I also used svgs as extensively as possible, to keep that extra sharp look.</p>
 

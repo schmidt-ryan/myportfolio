@@ -90,8 +90,21 @@
 
 
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (max-width: 1200px) {
     .infopage hr {
         margin: 35px 0px 25px 0px;
     }
+	.infopage h1 {
+		font-size: 38px;
+		line-height: 44px;
+	}
+	.infopage h2 {
+		font-size: 24px;
+		line-height: 32px;
+		padding-top: 5px;
+	}
+	.infopage p {
+		font-size: 16px;
+		line-height: 20px;
+	}
 }
